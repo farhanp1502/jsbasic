@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test{
+            background-color: rgb(254, 200, 130);
+        }
+    </style>
+</head>
+<body>
+    <div id="test" class="">
+        <h2>farhan pasha</h2>
+        <p id="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe consequuntur rem nesciunt minus sint ratione non, earum ullam illum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque beatae nostrum iste, nobis maiores tenetur, facilis aperiam atque minima laboriosam possimus at architecto illum totam, nemo libero esse. Ad tempore magni delectus, deleniti quaerat distinctio libero eos labore nobis et at quasi ab, minus nisi, officiis perferendis? Minima, iusto ullam!</p>
+    </div>
+    <script>
+        var parentElement = document.getElementById("test");
+        var target = document.getElementById("abc");
+
+        var find = parentElement.contains(target);
+
+        console.log(find);
+
+        // hasAttribute()
+        target = document.getElementById("test");
+        find = target.hasAttribute("class");
+        console.log(find);
+
+        // hasChildNodes()
+        find  = target.hasChildNodes();
+        console.log(find);
+
+    </script>
+</body>
+</html>

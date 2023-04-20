@@ -1,0 +1,56 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom navigation</title>
+    <style>
+        #test{
+            background: rgb(204, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <h2>farhan pasha : DOM CREATE METHODS</h2>
+    <div id="test">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur esse fuga numquam dolore, itaque excepturi error reiciendis, dicta maiores iste ipsum aut quasi, cumque odit ducimus impedit nihil ea voluptatibus doloribus culpa cupiditate. Alias modi amet qui iure similique incidunt nesciunt ratione quae consequuntur vel dicta ut, repellendus debitis eaque!</p>
+    </div>
+    <script>
+        var a ;
+        a = document.createElement("h2"); //to create any tag
+        console.log(a);
+
+        b = document.createTextNode("this is farhan pasha"); //to create any text
+
+        a.appendChild(b);
+
+        // document.getElementById("test").appendChild(a);
+
+        var target = document.getElementById("test");
+
+        target.insertBefore(a,target.childNodes[0]); // to insert the appended child in some specific position in html file
+
+
+
+        // insert adjacent methods:-
+
+        var newElement = document.createElement("h1");
+
+        var newText = document.createTextNode("This is just text")
+
+        newElement.appendChild(newText);
+
+        target.insertAdjacentElement("beforebegin",newElement); // beforebegin ,afterbegin,afterend, beforeend.....
+
+        a = "<h2>this is heading</h2>"
+
+        target.insertAdjacentHTML("afterend",a);// beforebegin ,afterbegin,afterend, beforeend.....
+
+        a = "this is text";
+
+        target.insertAdjacentText("beforeend",a);// beforebegin ,afterbegin,afterend, beforeend.....
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="head" class="abc">calculation</h1>
+    </header>
+    <main>
+      <h3>addition</h3>
+      <form>
+        <label id="lab1">number1</label>
+        <input type="text" id="input1" placeholder="number 1" />
+        <label id="lab2">number2</label>
+        <input type="text" id="input2" placeholder="number2" />
+        <br />
+        <br />
+        <button id="btn">submit</button>
+        <br />
+        <br />
+        <p id="lab3" style="border: 2px solid black; display: inline "></p>
+      </form>
+    </main>
+    <script>
+      document
+        .getElementById("btn")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          var num1 = document.getElementById("input1").value;
+          var num2 = document.getElementById("input2").value;
+          var sum = parseInt(num1) + parseInt(num2);
+          document.getElementById("lab3").innerHTML = sum;
+        });
+    </script>
+  </body>
+</html>

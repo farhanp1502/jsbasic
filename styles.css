@@ -1,0 +1,79 @@
+#header{
+  color: red;
+  background-color: blue;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px;
+  
+  }
+
+  
+  #menu{
+   
+    color: green;
+    background-color: brown;
+  
+    margin: 0px;
+   margin-top: -30px;
+  
+   
+    
+  }
+  .ul1 ul li a{
+    text-decoration: none;
+    color: white;
+   
+    
+  }
+  .ul1 ul li{
+   padding: 10px;
+    list-style-type: none;
+    display:inline-block;
+   
+  }
+  .ul1 ul li a:hover{
+color: yellow;
+  }
+  
+  #sidebar a{
+    text-decoration: none;
+    color: white;
+  
+    
+  }
+  #sidebar a:hover{
+    color: yellow;
+  }
+  #sidebar table {
+
+padding-bottom: 200px;
+  margin-left: 83.7%;
+  margin-top: -310px;
+  background-color: brown;
+  padding-right: 98px;
+  padding-left: 50px;
+  text-align: center;
+  padding-top: 4px;
+  line-height: 50px;
+  font-size: large;
+  
+  } 
+  #footer{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+#content {
+  color: brown;
+  padding-right: 200px;
+  margin-right: 200px;
+}
+#but{
+ font-size: large;
+ background-color: brown;
+ color: white;
+ border-radius: 20%;
+}

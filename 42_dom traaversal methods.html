@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+    }
+    #outer {
+      background-color: gold;
+      padding: 20px;
+    }
+    #inner {
+      background-color: aqua;
+      padding: 20px;
+    }
+    h3 {
+      border: black 2px solid;
+      padding: 5px;
+      display: inline-block;
+    }
+    #a {
+      margin: 10px 10px;
+    }
+    #b {
+      margin: -46px 80px;
+    }
+    #child-c {
+      margin: 8px 160px;
+    }
+    #d{
+      margin: -44px 250px;
+    }
+    #e{
+      margin: 7px 340px;
+    }
+  </style>
+  <body>
+    <div id="outer">
+      <h2>outer</h2>
+      <div id="inner">
+        <h2>inner</h2>
+        <div id="a"><h3>a</h3></div>
+        <div id="b"><h3>b</h3></div>
+        <div id="child-c"><h3>c</h3></div>
+        <div id="d"><h3>d</h3></div>
+        <div id="e"><h3>e</h3></div>
+      </div>
+    </div>
+    <script>
+      var a ;
+      a = document.getElementById("inner").parentElement; //parentelement
+      console.log(a);
+      a = document.getElementById("inner").parentNode; //parentnode
+      console.log(a);
+
+      document.getElementById("outer").parentNode.style.background = "black";
+      document.getElementById("inner").parentElement.style.background = "red";
+      document.getElementById("child-c").parentElement.style.background = "yellow";
+
+      a = document.getElementById("inner").children[1]; // returns children nodes 
+      console.log(a);
+
+      document.getElementById("inner").children[1].style.background = "white";
+
+      a = document.getElementById("inner").childNodes; // returns children nodes and other vlues along them under the parent node
+      console.log(a);
+
+      a = document.getElementById("inner").firstElementChild; // targets the first  childnode
+      console.log(a);  
+
+      document.getElementById("inner").firstElementChild.style.border="5px solid black";
+
+      a = document.getElementById("inner").lastElementChild; // targets the last child node
+      console.log(a);
+
+      document.getElementById("inner").lastElementChild.style.border="6px solid grey";
+
+      a = document.getElementById("inner").firstChild; // targets the first child element present
+      console.log(a);
+
+      a = document.getElementById("inner").lastChild; // targets the last child element present
+      console.log(a);
+
+      a = document.getElementById("child-c").nextElementSibling; // targets the next node present
+      console.log(a);
+
+      a = document.getElementById("child-c").previousElementSibling; // targets the previous node present
+      console.log(a);
+
+      a = document.getElementById("child-c").nextSibling; // targets the next element present
+      console.log(a);
+
+      a = document.getElementById("child-c").previousSibling; // targets the previous element present
+      console.log(a);
+
+  </script>
+  </body>
+</html>
